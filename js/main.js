@@ -1,21 +1,24 @@
 const menuButton = document.querySelector('.menu-button');
-const navigation = document.querySelector('#site-nav');
+const navigation = document.querySelector('#mobile-nav');
 const header = document.querySelector('[data-header]');
+const pageShell = document.querySelector('[data-page-shell]');
 let menuScrollY = 0;
+let previousScrollBehavior = '';
 
 function lockPageScroll() {
   menuScrollY = window.scrollY;
-  document.body.style.position = 'fixed';
-  document.body.style.top = `-${menuScrollY}px`;
-  document.body.style.width = '100%';
+  previousScrollBehavior = document.documentElement.style.scrollBehavior;
+  document.documentElement.style.scrollBehavior = 'auto';
+  pageShell.style.position = 'fixed';
+  pageShell.style.top = `-${menuScrollY}px`;
+  pageShell.style.width = '100%';
+  window.scrollTo(0, 0);
 }
 
 function unlockPageScroll() {
-  const previousScrollBehavior = document.documentElement.style.scrollBehavior;
-  document.documentElement.style.scrollBehavior = 'auto';
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.width = '';
+  pageShell.style.position = '';
+  pageShell.style.top = '';
+  pageShell.style.width = '';
   window.scrollTo(0, menuScrollY);
   requestAnimationFrame(() => { document.documentElement.style.scrollBehavior = previousScrollBehavior; });
 }
