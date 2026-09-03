@@ -1,0 +1,253 @@
+/* Focused Version 1 refinements. Loaded last to preserve the original system. */
+.eyebrow,
+.eyebrow-dark {
+  width: 196px;
+  min-height: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 0.38rem 0.75rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(12, 138, 148, 0.12);
+  border-radius: 999px;
+  background: var(--pale);
+  color: var(--teal);
+  font-size: 0.67rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.dark .eyebrow,
+.eyebrow-dark {
+  border-color: rgba(145, 216, 220, 0.24);
+  background: rgba(225, 242, 243, 0.96);
+  color: #087782;
+}
+
+.about-grid .eyebrow {
+  max-width: none;
+  color: var(--teal);
+  font-size: 0.67rem;
+  line-height: 1.05;
+}
+
+.scenario {
+  min-width: 0;
+}
+
+.scenario-chart {
+  display: block;
+  width: 100%;
+  height: 70px;
+  overflow: visible;
+}
+
+.scenario-chart path {
+  vector-effect: non-scaling-stroke;
+}
+
+.chart-guide {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 1.5;
+}
+
+.chart-line {
+  fill: none;
+  stroke: var(--teal);
+  stroke-width: 2.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart-before {
+  stroke: #68889b;
+}
+
+.chart-end,
+.event-point {
+  fill: var(--teal);
+}
+
+.event-line,
+.decision-line {
+  fill: none;
+  stroke: #89a6b6;
+  stroke-width: 1;
+  stroke-dasharray: 3 4;
+}
+
+.decision-line {
+  stroke: var(--teal);
+}
+
+.capability-grid article {
+  display: flex;
+  min-height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.25rem;
+}
+
+.capability-grid h3 {
+  margin-bottom: 0.9rem;
+}
+
+.capability-grid p {
+  margin-bottom: 0;
+}
+
+.about {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  background: #f7f9fa;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  right: -8rem;
+  bottom: -12rem;
+  width: 28rem;
+  height: 28rem;
+  border: 1px solid rgba(12, 138, 148, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.about-grid {
+  position: relative;
+  z-index: 1;
+  align-items: start;
+}
+
+.about-grid > div:last-child {
+  padding-top: 3.8rem;
+}
+
+.about-grid > div:last-child p {
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--teal);
+}
+
+.about-motif {
+  position: relative;
+  width: 150px;
+  height: 90px;
+  margin: 3.5rem 0 0 0.6rem;
+}
+
+.about-motif i {
+  position: absolute;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.about-motif i:nth-child(1) { left: 0; top: 38px; }
+.about-motif i:nth-child(2) { left: 70px; top: 14px; }
+.about-motif i:nth-child(3) { left: 132px; top: 62px; }
+.about-motif span {
+  position: absolute;
+  left: 7px;
+  top: 42px;
+  width: 68px;
+  height: 1px;
+  background: #88a9b8;
+  transform: rotate(-19deg);
+  transform-origin: left;
+}
+.about-motif span:last-child {
+  left: 77px;
+  top: 19px;
+  width: 74px;
+  transform: rotate(38deg);
+}
+
+.personal {
+  border-bottom: 1px solid var(--line);
+}
+
+.phone-screen {
+  min-height: 0;
+  padding: 0;
+  aspect-ratio: 396 / 858;
+  background: #eaf2f4;
+}
+
+.personal-screenshot {
+  position: absolute;
+  top: -11.89%;
+  left: -14.39%;
+  display: block;
+  width: 129.04%;
+  max-width: none;
+  height: auto;
+}
+
+@media (min-width: 901px) {
+  .phone {
+    width: 300px;
+  }
+}
+
+.contact-card--simple {
+  min-height: 360px;
+  align-items: center;
+}
+
+.contact-card--simple h2 {
+  margin-bottom: 1.25rem;
+}
+
+.contact-card--simple > div:first-child > p {
+  margin-bottom: 0;
+}
+
+.contact-action a[href^="mailto"],
+.footer-contact a[href^="mailto"] {
+  text-underline-offset: 0.2em;
+}
+
+@media (max-width: 900px) {
+  .about-grid > div:last-child {
+    padding-top: 0;
+  }
+
+  .about-motif {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .eyebrow,
+  .eyebrow-dark {
+    margin-bottom: 1.6rem;
+  }
+
+  .scenario-chart {
+    height: 78px;
+  }
+
+  .capability-grid article {
+    min-height: 165px;
+    padding: 1.75rem;
+  }
+
+  .about-grid > div:last-child p {
+    padding-left: 1rem;
+  }
+
+  .eyebrow,
+  .eyebrow-dark {
+    width: min(196px, 100%);
+  }
+
+  .contact-card--simple {
+    min-height: 0;
+  }
+}
