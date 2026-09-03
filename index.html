@@ -7,27 +7,30 @@
   <meta name="theme-color" content="#071d2e">
   <title>Floquanta — Explore what's possible</title>
   <link rel="icon" type="image/png" href="brand/floquanta_icon_1024.png">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20260903">
   <link rel="stylesheet" href="css/brand.css">
-  <link rel="stylesheet" href="css/refinements.css">
+  <link rel="stylesheet" href="css/refinements.css?v=20260903">
+  <script src="js/i18n.js?v=20260903" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
   <header class="site-header" data-header>
     <div class="nav-shell">
-      <a class="wordmark" href="#top" aria-label="Floquanta home"><img src="brand/floquanta_tree_001.svg" alt="" width="26" height="26">Floquanta</a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav"><span>Menu</span><i aria-hidden="true"></i></button>
+      <a class="wordmark" href="#top" data-i18n-aria-label="a11y.home" aria-label="Floquanta home"><img src="brand/floquanta_tree_001.svg" alt="" width="26" height="26">Floquanta</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav"><span data-i18n="nav.menu">Menu</span><i aria-hidden="true"></i></button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#approach">Approach</a><a href="#capabilities">Capabilities</a><a href="#applications">Applications</a><a href="#personal">Personal</a><a href="#about">About</a>
-        <a class="button button-outline nav-cta" href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email Floquanta about a decision worth exploring">Let's Talk</a>
+        <a href="#approach" data-i18n="nav.approach">Approach</a><a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a><a href="#applications" data-i18n="nav.applications">Applications</a><a href="#personal">Personal</a><a href="#about" data-i18n="nav.about">About</a>
+        <div class="language-switcher" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">|</span><button type="button" data-lang="fr" aria-pressed="false">FR</button></div>
+        <a class="button button-outline nav-cta" data-mailto data-i18n="nav.talk" href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email Floquanta about a decision worth exploring">Let's Talk</a>
       </nav>
     </div>
   </header>
 
   <nav id="mobile-nav" class="mobile-overlay" aria-label="Mobile navigation">
-    <a href="#approach">Approach</a><a href="#capabilities">Capabilities</a><a href="#applications">Applications</a><a href="#personal">Personal</a><a href="#about">About</a>
-    <a class="button button-outline nav-cta" href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email Floquanta about a decision worth exploring">Let's Talk</a>
+    <a href="#approach" data-i18n="nav.approach">Approach</a><a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a><a href="#applications" data-i18n="nav.applications">Applications</a><a href="#personal">Personal</a><a href="#about" data-i18n="nav.about">About</a>
+    <div class="language-switcher language-switcher--mobile" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">|</span><button type="button" data-lang="fr" aria-pressed="false">FR</button></div>
+    <a class="button button-outline nav-cta" data-mailto data-i18n="nav.talk" href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email Floquanta about a decision worth exploring">Let's Talk</a>
   </nav>
 
   <div class="page-shell" data-page-shell>
@@ -35,70 +38,70 @@
     <section class="hero dark" id="top">
       <div class="hero-grid container">
         <div class="hero-copy">
-          <p class="eyebrow eyebrow-dark">Decision intelligence</p>
-          <h1>Explore what's<br>possible.</h1>
-          <p class="hero-subhead">Quantitative models and simulation for decisions under uncertainty.</p>
-          <p class="hero-intro">Floquanta builds simplified mathematical representations of complex business systems to explore possible futures and understand the consequences of decisions.</p>
-          <a class="button button-fill" href="#approach">Explore Floquanta <span aria-hidden="true">↓</span></a>
+          <p class="eyebrow eyebrow-dark" data-i18n="hero.label">Decision intelligence</p>
+          <h1 data-i18n-html="hero.title">Explore what's<br>possible.</h1>
+          <p class="hero-subhead" data-i18n="hero.subhead">Quantitative models and simulation for decisions under uncertainty.</p>
+          <p class="hero-intro" data-i18n="hero.intro">Floquanta builds simplified mathematical representations of complex business systems to explore possible futures and understand the consequences of decisions.</p>
+          <a class="button button-fill" href="#approach"><span data-i18n="hero.cta">Explore Floquanta</span> <span aria-hidden="true">↓</span></a>
         </div>
         <div class="future-map" aria-hidden="true">
-          <span class="map-label map-label-1">Decision</span><span class="map-label map-label-2">Uncertainty</span><span class="map-label map-label-3">Possible futures</span>
+          <span class="map-label map-label-1" data-i18n="diagram.decision">Decision</span><span class="map-label map-label-2" data-i18n="diagram.uncertainty">Uncertainty</span><span class="map-label map-label-3" data-i18n="diagram.futures">Possible futures</span>
           <i class="path p1"></i><i class="path p2"></i><i class="path p3"></i><i class="path p4"></i><i class="path p5"></i><i class="path p6"></i><i class="path p7"></i>
           <b class="node n1"></b><b class="node n2"></b><b class="node n3"></b><b class="node n4"></b><b class="node n5"></b><b class="node n6"></b><b class="node n7"></b><b class="node n8"></b>
         </div>
-        <p class="manifesto">We don't model everything.<br><strong>We model what matters.</strong></p>
+        <p class="manifesto" data-i18n-html="hero.manifesto">We don't model everything.<br><strong>We model what matters.</strong></p>
       </div>
     </section>
 
     <section class="section approach" id="approach">
       <div class="container">
-        <p class="eyebrow">Our Approach</p>
-        <div class="section-heading split-heading"><h2>Complex systems.<br><em>Simplified models.</em></h2><p>A useful model does not need to reproduce an entire organization. It needs to capture the variables, relationships and uncertainties that matter to the decision.</p></div>
+        <p class="eyebrow" data-i18n="approach.label">Our Approach</p>
+        <div class="section-heading split-heading"><h2 data-i18n-html="approach.title">Complex systems.<br><em>Simplified models.</em></h2><p data-i18n="approach.copy">A useful model does not need to reproduce an entire organization. It needs to capture the variables, relationships and uncertainties that matter to the decision.</p></div>
         <div class="simplify-graphic" aria-hidden="true">
-          <div class="system-cloud"><i></i><i></i><i></i><i></i><i></i><i></i><span>Complex system</span></div>
+          <div class="system-cloud"><i></i><i></i><i></i><i></i><i></i><i></i><span data-i18n="approach.complexSystem">Complex system</span></div>
           <span class="graphic-arrow">→</span>
-          <div class="system-model"><i></i><i></i><i></i><span>Relevant model</span></div>
+          <div class="system-model"><i></i><i></i><i></i><span data-i18n="approach.relevantModel">Relevant model</span></div>
         </div>
         <ol class="stages">
-          <li><span>01</span><div><h3>Frame</h3><p>Start with the decision, not the model.</p></div></li>
-          <li><span>02</span><div><h3>Simplify</h3><p>Identify the smallest useful representation.</p></div></li>
-          <li><span>03</span><div><h3>Simulate</h3><p>Propagate uncertainty through thousands of possible futures.</p></div></li>
-          <li><span>04</span><div><h3>Explore</h3><p>Compare scenarios and understand their consequences.</p></div></li>
-          <li><span>05</span><div><h3>Refine</h3><p>Improve the model iteratively as new information, questions and decisions emerge.</p></div></li>
+          <li><span>01</span><div><h3 data-i18n="approach.frame">Frame</h3><p data-i18n="approach.frameCopy">Start with the decision, not the model.</p></div></li>
+          <li><span>02</span><div><h3 data-i18n="approach.simplify">Simplify</h3><p data-i18n="approach.simplifyCopy">Identify the smallest useful representation.</p></div></li>
+          <li><span>03</span><div><h3 data-i18n="approach.simulate">Simulate</h3><p data-i18n="approach.simulateCopy">Propagate uncertainty through thousands of possible futures.</p></div></li>
+          <li><span>04</span><div><h3 data-i18n="approach.explore">Explore</h3><p data-i18n="approach.exploreCopy">Compare scenarios and understand their consequences.</p></div></li>
+          <li><span>05</span><div><h3 data-i18n="approach.refine">Refine</h3><p data-i18n="approach.refineCopy">Improve the model iteratively as new information, questions and decisions emerge.</p></div></li>
         </ol>
-        <p class="closing-line">Model only what matters to the decision.</p>
+        <p class="closing-line" data-i18n="approach.closing">Model only what matters to the decision.</p>
       </div>
     </section>
 
     <section class="section decision-twins" id="decision-twins">
       <div class="container">
-        <p class="eyebrow">Decision Twins</p>
-        <div class="section-heading"><h2>A lightweight quantitative<br>representation of your business.</h2><p>Connect financial, operational and risk variables in a parsimonious model designed around a specific question.</p></div>
-        <div class="flow" aria-label="A business is represented by a focused model, which produces simulated futures">
-          <article><span>Business</span><strong>Revenues · Costs · Operations</strong></article><i aria-hidden="true">→</i>
-          <article><span>Model</span><strong>Relationships · Uncertainty</strong></article><i aria-hidden="true">→</i>
-          <article><span>Futures</span><strong>Simulation · Scenarios</strong></article>
+        <p class="eyebrow" data-i18n="twins.label">Decision Twins</p>
+        <div class="section-heading"><h2 data-i18n-html="twins.title">A lightweight quantitative<br>representation of your business.</h2><p data-i18n="twins.copy">Connect financial, operational and risk variables in a parsimonious model designed around a specific question.</p></div>
+        <div class="flow" data-i18n-aria-label="a11y.flow" aria-label="A business is represented by a focused model, which produces simulated futures">
+          <article><span data-i18n="twins.business">Business</span><strong data-i18n="twins.businessItems">Revenues · Costs · Operations</strong></article><i aria-hidden="true">→</i>
+          <article><span data-i18n="twins.model">Model</span><strong data-i18n="twins.modelItems">Relationships · Uncertainty</strong></article><i aria-hidden="true">→</i>
+          <article><span data-i18n="twins.futures">Futures</span><strong data-i18n="twins.futureItems">Simulation · Scenarios</strong></article>
         </div>
         <div class="scenario-grid">
-          <article class="scenario"><small>Base case</small><h3>Expected evolution</h3><svg class="scenario-chart" viewBox="0 0 260 70" role="img" aria-label="Conceptual baseline trajectory with modest variation"><path class="chart-guide" d="M2 62H258"/><path class="chart-line" d="M3 53 C32 49 47 43 70 45 S108 36 132 38 S168 27 194 29 S229 19 257 14"/><circle class="chart-end" cx="257" cy="14" r="3"/></svg></article>
-          <article class="scenario"><small>Stress</small><h3>Largest customer leaves</h3><svg class="scenario-chart" viewBox="0 0 260 70" role="img" aria-label="Conceptual trajectory showing a sudden negative shock"><path class="chart-guide" d="M2 62H258"/><path class="chart-line" d="M3 53 C34 47 55 42 81 43 S112 35 131 34 L143 58 C172 56 192 57 215 53 S241 51 257 50"/><path class="event-line" d="M143 8V64"/><circle class="event-point" cx="143" cy="58" r="4"/></svg></article>
-          <article class="scenario"><small>Decision</small><h3>Invest $2M today</h3><svg class="scenario-chart" viewBox="0 0 260 70" role="img" aria-label="Conceptual trajectory showing an investment dip followed by a changed path"><path class="chart-guide" d="M2 62H258"/><path class="chart-line chart-before" d="M3 43 C32 39 57 35 83 37 L105 58"/><path class="chart-line chart-after" d="M105 58 C133 51 151 39 171 31 S218 17 257 10"/><path class="decision-line" d="M105 10V64"/><circle class="event-point" cx="105" cy="58" r="4"/></svg></article>
+          <article class="scenario"><small data-i18n="twins.base">Base case</small><h3 data-i18n="twins.baseCopy">Expected evolution</h3><svg class="scenario-chart" viewBox="0 0 260 70" aria-hidden="true"><path class="chart-guide" d="M2 62H258"/><path class="chart-line" d="M3 53 C32 49 47 43 70 45 S108 36 132 38 S168 27 194 29 S229 19 257 14"/><circle class="chart-end" cx="257" cy="14" r="3"/></svg></article>
+          <article class="scenario"><small data-i18n="twins.stress">Stress</small><h3 data-i18n="twins.stressCopy">Largest customer leaves</h3><svg class="scenario-chart" viewBox="0 0 260 70" aria-hidden="true"><path class="chart-guide" d="M2 62H258"/><path class="chart-line" d="M3 53 C34 47 55 42 81 43 S112 35 131 34 L143 58 C172 56 192 57 215 53 S241 51 257 50"/><path class="event-line" d="M143 8V64"/><circle class="event-point" cx="143" cy="58" r="4"/></svg></article>
+          <article class="scenario"><small data-i18n="twins.decision">Decision</small><h3 data-i18n="twins.decisionCopy">Invest $2M today</h3><svg class="scenario-chart" viewBox="0 0 260 70" aria-hidden="true"><path class="chart-guide" d="M2 62H258"/><path class="chart-line chart-before" d="M3 43 C32 39 57 35 83 37 L105 58"/><path class="chart-line chart-after" d="M105 58 C133 51 151 39 171 31 S218 17 257 10"/><path class="decision-line" d="M105 10V64"/><circle class="event-point" cx="105" cy="58" r="4"/></svg></article>
         </div>
-        <aside class="twin-note"><strong>Not a massive digital twin.</strong><span>A focused model built to answer the question that matters now.</span></aside>
+        <aside class="twin-note"><strong data-i18n="twins.note">Not a massive digital twin.</strong><span data-i18n="twins.noteCopy">A focused model built to answer the question that matters now.</span></aside>
       </div>
     </section>
 
     <section class="section" id="capabilities">
       <div class="container">
-        <p class="eyebrow">Capabilities</p>
-        <div class="section-heading"><h2>From uncertainty to insight.</h2></div>
+        <p class="eyebrow" data-i18n="cap.label">Capabilities</p>
+        <div class="section-heading"><h2 data-i18n="cap.title">From uncertainty to insight.</h2></div>
         <div class="capability-grid">
-          <article><h3>Quantitative Modeling</h3><p>Simplified mathematical representations of complex business systems.</p></article>
-          <article><h3>Simulation &amp; Scenario Analysis</h3><p>Explore possible futures and compare alternative decisions.</p></article>
-          <article><h3>Dynamic Financial Analysis</h3><p>Connect operational, financial and risk drivers dynamically.</p></article>
-          <article><h3>Risk &amp; Uncertainty Modeling</h3><p>Model variability, dependencies and tail outcomes.</p></article>
-          <article><h3>Decision Twins</h3><p>Focused digital representations designed around a decision.</p></article>
-          <article><h3>Applied AI &amp; Analytics</h3><p>Use AI where it improves modeling, exploration or interpretation.</p></article>
+          <article><h3 data-i18n="cap.quant">Quantitative Modeling</h3><p data-i18n="cap.quantCopy">Simplified mathematical representations of complex business systems.</p></article>
+          <article><h3 data-i18n="cap.sim">Simulation &amp; Scenario Analysis</h3><p data-i18n="cap.simCopy">Explore possible futures and compare alternative decisions.</p></article>
+          <article><h3 data-i18n="cap.dfa">Dynamic Financial Analysis</h3><p data-i18n="cap.dfaCopy">Connect operational, financial and risk drivers dynamically.</p></article>
+          <article><h3 data-i18n="cap.risk">Risk &amp; Uncertainty Modeling</h3><p data-i18n="cap.riskCopy">Model variability, dependencies and tail outcomes.</p></article>
+          <article><h3 data-i18n="cap.twins">Decision Twins</h3><p data-i18n="cap.twinsCopy">Focused digital representations designed around a decision.</p></article>
+          <article><h3 data-i18n="cap.ai">Applied AI &amp; Analytics</h3><p data-i18n="cap.aiCopy">Use AI where it improves modeling, exploration or interpretation.</p></article>
         </div>
       </div>
     </section>
@@ -106,31 +109,31 @@
     <section class="section dark applications" id="applications">
       <div class="container">
         <p class="eyebrow eyebrow-dark">Applications</p>
-        <div class="section-heading split-heading"><h2>Questions worth modeling.</h2><p>Floquanta can start with a financial question and expand only as far as the decision requires.</p></div>
+        <div class="section-heading split-heading"><h2 data-i18n="apps.title">Questions worth modeling.</h2><p data-i18n="apps.copy">Floquanta can start with a financial question and expand only as far as the decision requires.</p></div>
         <div class="questions">
-          <p><span>01</span>What if our largest customer leaves?</p><p><span>02</span>What if costs rise faster than revenue?</p><p><span>03</span>How fast can we grow without putting liquidity under pressure?</p><p><span>04</span>How resilient is our liquidity under stress?</p><p><span>05</span>Which uncertainties actually drive our outcome?</p>
+          <p><span>01</span><span class="question-copy" data-i18n="apps.q1">What if our largest customer leaves?</span></p><p><span>02</span><span class="question-copy" data-i18n="apps.q2">What if costs rise faster than revenue?</span></p><p><span>03</span><span class="question-copy" data-i18n="apps.q3">How fast can we grow without putting liquidity under pressure?</span></p><p><span>04</span><span class="question-copy" data-i18n="apps.q4">How resilient is our liquidity under stress?</span></p><p><span>05</span><span class="question-copy" data-i18n="apps.q5">Which uncertainties actually drive our outcome?</span></p>
         </div>
-        <p class="application-types">Financial <i>·</i> Operational <i>·</i> Risk <i>·</i> Strategic</p>
+        <p class="application-types" data-i18n-html="apps.types">Financial <i>·</i> Operational <i>·</i> Risk <i>·</i> Strategic</p>
       </div>
     </section>
 
     <section class="section personal" id="personal">
       <div class="container personal-grid">
-        <div class="personal-copy"><p class="eyebrow">Floquanta Personal</p><h2>The same philosophy,<br>made personal.</h2><p>Floquanta Personal is a free consumer application that demonstrates the Floquanta approach: start with a plan, explore scenarios, and understand possible financial futures.</p><p>It helps people explore possible futures rather than pretend to predict them.</p><div class="store-row" aria-label="App stores"><span class="store-button" aria-disabled="true"><small>Coming soon on the</small>App Store</span><span class="store-button" aria-disabled="true"><small>Coming soon on</small>Google Play</span></div><small class="separate-note">A separate consumer application, sharing the same modeling philosophy.</small></div>
-        <div class="phone"><div class="phone-screen"><img class="personal-screenshot" src="brand/Floquanta_app_screenshot.png" alt="Floquanta Personal forecast screen showing a balance trajectory over time" width="511" height="1019"></div></div>
+        <div class="personal-copy"><p class="eyebrow">Floquanta Personal</p><h2 data-i18n-html="personal.title">The same philosophy,<br>made personal.</h2><p data-i18n="personal.copy">Floquanta Personal is a free consumer application that demonstrates the Floquanta approach: start with a plan, explore scenarios, and understand possible financial futures.</p><p data-i18n="personal.copy2">It helps people explore possible futures rather than pretend to predict them.</p><p class="store-availability" data-i18n="personal.soon">Coming soon</p><div class="store-row" data-i18n-aria-label="a11y.stores" aria-label="App stores"><span class="store-button" aria-disabled="true">App Store</span><span class="store-button" aria-disabled="true">Google Play</span></div><small class="separate-note" data-i18n="personal.note">A separate consumer application, sharing the same modeling philosophy.</small></div>
+        <div class="phone"><div class="phone-screen"><img class="personal-screenshot" src="brand/Floquanta_app_screenshot.png" data-i18n-alt="personal.imageAlt" alt="Floquanta Personal forecast screen showing a balance trajectory over time" width="511" height="1019"></div></div>
       </div>
     </section>
 
     <section class="section about" id="about">
-      <div class="container about-grid"><div class="about-aside"><p class="eyebrow">About Floquanta</p><div class="about-motif" aria-hidden="true"><i></i><i></i><i></i><span></span><span></span></div></div><div><h2>Mathematical thinking.<br>Practical decisions.</h2><p>Floquanta combines mathematical modeling, actuarial thinking, simulation, analytics and modern technology to help organizations make sense of complex systems and uncertain futures.</p></div></div>
+      <div class="container about-grid"><div class="about-aside"><p class="eyebrow" data-i18n="about.label">About Floquanta</p><div class="about-motif" aria-hidden="true"><i></i><i></i><i></i><span></span><span></span></div></div><div><h2 data-i18n-html="about.title">Mathematical thinking.<br>Practical decisions.</h2><p data-i18n="about.copy">Floquanta combines mathematical modeling, actuarial thinking, simulation, analytics and modern technology to help organizations make sense of complex systems and uncertain futures.</p></div></div>
     </section>
 
     <section class="contact" id="contact">
-      <div class="container contact-card contact-card--simple"><div><h2>Have a decision worth exploring?</h2><p>Let's build the simplest useful model around it.</p></div><div class="contact-action"><a class="button button-fill" href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email Floquanta about a decision worth exploring">Let's Talk <span aria-hidden="true">↗</span></a><address>Floquanta Inc.<br>Québec, Canada<br><a href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email contact at Floquanta about a decision worth exploring">contact@floquanta.com</a></address></div></div>
+      <div class="container contact-card contact-card--simple"><div><h2 data-i18n="contact.title">Have a decision worth exploring?</h2><p data-i18n="contact.copy">Let's build the simplest useful model around it.</p></div><div class="contact-action"><a class="button button-fill" data-mailto href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email Floquanta about a decision worth exploring"><span data-i18n="nav.talk">Let's Talk</span> <span aria-hidden="true">↗</span></a><address>Floquanta Inc.<br>Québec, Canada<br><a data-mailto href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email contact at Floquanta about a decision worth exploring">contact@floquanta.com</a></address></div></div>
     </section>
   </main>
 
-  <footer class="site-footer dark"><div class="container footer-grid"><div><a class="wordmark" href="#top"><img src="brand/floquanta_tree_001.svg" alt="" width="26" height="26">Floquanta</a><p>Complex systems. Simplified models.</p></div><nav aria-label="Footer navigation"><a href="#approach">Approach</a><a href="#capabilities">Capabilities</a><a href="#applications">Applications</a><a href="#personal">Personal</a><a href="#about">About</a></nav><div class="footer-contact">Floquanta Inc.<br>Québec, Canada<br><a href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email contact at Floquanta about a decision worth exploring">contact@floquanta.com</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> Floquanta Inc.</span><span><a href="legal/privacy.html">Privacy</a><a href="legal/terms.html">Terms</a></span></div></footer>
+  <footer class="site-footer dark"><div class="container footer-grid"><div><a class="wordmark" href="#top"><img src="brand/floquanta_tree_001.svg" alt="" width="26" height="26">Floquanta</a><p data-i18n="footer.tagline">Complex systems. Simplified models.</p></div><nav data-i18n-aria-label="a11y.footerNav" aria-label="Footer navigation"><a href="#approach" data-i18n="nav.approach">Approach</a><a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a><a href="#applications" data-i18n="nav.applications">Applications</a><a href="#personal">Personal</a><a href="#about" data-i18n="nav.about">About</a></nav><div class="footer-contact">Floquanta Inc.<br>Québec, Canada<br><a data-mailto href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email contact at Floquanta about a decision worth exploring">contact@floquanta.com</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> Floquanta Inc.</span><span><a href="legal/privacy.html" data-i18n="footer.privacy">Privacy</a><a href="legal/terms.html" data-i18n="footer.terms">Terms</a></span></div></footer>
   </div>
 </body>
 </html>

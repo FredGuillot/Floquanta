@@ -213,6 +213,64 @@
   text-underline-offset: 0.2em;
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #7894a5;
+  font-size: 0.7rem;
+}
+
+.language-switcher button {
+  min-width: 32px;
+  min-height: 36px;
+  padding: 0.35rem;
+  border: 0;
+  background: transparent;
+  color: #a9beca;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+}
+
+.language-switcher button[aria-pressed="true"] {
+  color: var(--aqua);
+}
+
+.language-switcher button:hover {
+  color: #fff;
+}
+
+.questions .question-copy {
+  color: #d7e4eb;
+  font-size: inherit;
+}
+
+.store-availability {
+  margin: 2.2rem 0 0.65rem;
+  color: var(--muted);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.store-availability + .store-row {
+  margin-top: 0;
+}
+
+html[lang="fr"] .eyebrow {
+  font-size: 0.56rem;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 1100px) and (min-width: 721px) {
+  .site-nav {
+    gap: 1.15rem;
+  }
+}
+
 @media (max-width: 720px) {
   body.menu-open {
     overflow: hidden;
@@ -264,6 +322,23 @@
   .mobile-overlay > a:not(.button) {
     padding: 1rem 0;
     border-bottom: 1px solid #24445b;
+  }
+
+  .language-switcher--mobile {
+    align-self: flex-start;
+    margin-top: 1.25rem;
+    color: #7894a5;
+  }
+
+  .language-switcher--mobile button {
+    min-width: 44px;
+    min-height: 44px;
+    color: #a9beca;
+    font-size: 0.78rem;
+  }
+
+  .language-switcher--mobile button[aria-pressed="true"] {
+    color: var(--aqua);
   }
 
   .mobile-overlay .nav-cta {
