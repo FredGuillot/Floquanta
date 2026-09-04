@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/styles.css?v=20260903">
   <link rel="stylesheet" href="css/brand.css">
   <link rel="stylesheet" href="css/refinements.css?v=20260903">
-  <script src="js/i18n.js?v=20260904" defer></script>
+  <script src="js/i18n.js?v=20260904-2" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
       <a class="wordmark" href="#top" data-i18n-aria-label="a11y.home" aria-label="Floquanta home"><img src="brand/floquanta_tree_001.svg" alt="" width="26" height="26">Floquanta</a>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav"><span data-i18n="nav.menu">Menu</span><i aria-hidden="true"></i></button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#approach" data-i18n="nav.approach">Approach</a><a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a><a href="#applications" data-i18n="nav.applications">Applications</a><a href="#personal">Personal</a><a href="#about" data-i18n="nav.about">About</a>
+        <a href="#approach" data-i18n="nav.approach">Approach</a><a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a><a href="#applications" data-i18n="nav.applications">Applications</a><a href="#personal" data-i18n="nav.forYou">For You</a><a href="#about" data-i18n="nav.about">About</a>
         <div class="language-switcher" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">|</span><button type="button" data-lang="fr" aria-pressed="false">FR</button></div>
         <a class="button button-outline nav-cta" data-mailto data-i18n="nav.talk" href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email Floquanta about a decision worth exploring">Let's Talk</a>
       </nav>
@@ -28,7 +28,7 @@
   </header>
 
   <nav id="mobile-nav" class="mobile-overlay" aria-label="Mobile navigation">
-    <a href="#approach" data-i18n="nav.approach">Approach</a><a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a><a href="#applications" data-i18n="nav.applications">Applications</a><a href="#personal">Personal</a><a href="#about" data-i18n="nav.about">About</a>
+    <a href="#approach" data-i18n="nav.approach">Approach</a><a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a><a href="#applications" data-i18n="nav.applications">Applications</a><a href="#personal" data-i18n="nav.forYou">For You</a><a href="#about" data-i18n="nav.about">About</a>
     <div class="language-switcher language-switcher--mobile" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">|</span><button type="button" data-lang="fr" aria-pressed="false">FR</button></div>
     <a class="button button-outline nav-cta" data-mailto data-i18n="nav.talk" href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email Floquanta about a decision worth exploring">Let's Talk</a>
   </nav>
@@ -119,8 +119,8 @@
 
     <section class="section personal" id="personal">
       <div class="container personal-grid">
-        <div class="personal-copy"><p class="eyebrow">Floquanta Personal</p><h2 data-i18n-html="personal.title">The same philosophy,<br>made personal.</h2><p data-i18n="personal.copy">Floquanta Personal is a free consumer application that demonstrates the Floquanta approach: start with a plan, explore scenarios, and understand possible financial futures.</p><p data-i18n="personal.copy2">It helps people explore possible futures rather than pretend to predict them.</p><p class="store-availability" data-i18n="personal.soon">Coming soon</p><div class="store-row" data-i18n-aria-label="a11y.stores" aria-label="App stores"><span class="store-button" aria-disabled="true">App Store</span><span class="store-button" aria-disabled="true">Google Play</span></div><small class="separate-note" data-i18n="personal.note">A separate consumer application, sharing the same modeling philosophy.</small></div>
-        <div class="phone"><div class="phone-screen"><img class="personal-screenshot" src="brand/Floquanta_app_screenshot.png" data-i18n-alt="personal.imageAlt" alt="Floquanta Personal forecast screen showing a balance trajectory over time" width="511" height="1019"></div></div>
+        <div class="personal-copy"><p class="eyebrow" data-i18n="personal.label">Floquanta For You</p><h2 data-i18n="personal.title">The same philosophy, for your personal finances.</h2><p data-i18n="personal.copy">Experience the Floquanta approach applied to your personal finances.</p><p data-i18n="personal.copy2">The Floquanta app lets you start from your financial situation, explore different scenarios and better understand possible financial futures.</p><p class="store-availability" data-i18n="personal.soon">Coming soon</p><div class="store-row" data-i18n-aria-label="a11y.stores" aria-label="App stores"><span class="store-button" aria-disabled="true">App Store</span><span class="store-button" aria-disabled="true">Google Play</span></div><small class="separate-note" data-i18n="personal.note">Free. A simple way to experience Floquanta through your own finances.</small></div>
+        <div class="phone"><div class="phone-screen"><img class="personal-screenshot" src="brand/Floquanta_app_screenshot.png" data-i18n-alt="personal.imageAlt" alt="Floquanta app forecast screen showing a balance trajectory over time" width="511" height="1019"></div></div>
       </div>
     </section>
 
@@ -133,7 +133,7 @@
     </section>
   </main>
 
-  <footer class="site-footer dark"><div class="container footer-grid"><div><a class="wordmark" href="#top"><img src="brand/floquanta_tree_001.svg" alt="" width="26" height="26">Floquanta</a><p data-i18n="footer.tagline">Complex systems. Simplified models.</p></div><nav data-i18n-aria-label="a11y.footerNav" aria-label="Footer navigation"><a href="#approach" data-i18n="nav.approach">Approach</a><a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a><a href="#applications" data-i18n="nav.applications">Applications</a><a href="#personal">Personal</a><a href="#about" data-i18n="nav.about">About</a></nav><div class="footer-contact">Floquanta Inc.<br><a data-mailto href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email contact at Floquanta about a decision worth exploring">contact@floquanta.com</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> Floquanta Inc.</span><span><a href="legal/privacy.html" data-i18n="footer.privacy">Privacy</a><a href="legal/terms.html" data-i18n="footer.terms">Terms</a></span></div></footer>
+  <footer class="site-footer dark"><div class="container footer-grid"><div><a class="wordmark" href="#top"><img src="brand/floquanta_tree_001.svg" alt="" width="26" height="26">Floquanta</a><p data-i18n="footer.tagline">Complex systems. Simplified models.</p></div><nav data-i18n-aria-label="a11y.footerNav" aria-label="Footer navigation"><a href="#approach" data-i18n="nav.approach">Approach</a><a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a><a href="#applications" data-i18n="nav.applications">Applications</a><a href="#personal" data-i18n="nav.forYou">For You</a><a href="#about" data-i18n="nav.about">About</a></nav><div class="footer-contact">Floquanta Inc.<br><a data-mailto href="mailto:contact@floquanta.com?subject=Floquanta%20%E2%80%94%20Decision%20worth%20exploring" aria-label="Email contact at Floquanta about a decision worth exploring">contact@floquanta.com</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> Floquanta Inc.</span><span><a href="legal/privacy.html" data-i18n="footer.privacy">Privacy</a><a href="legal/terms.html" data-i18n="footer.terms">Terms</a></span></div></footer>
   </div>
 </body>
 </html>
